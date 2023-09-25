@@ -7,7 +7,7 @@ install:
 
 # Scripts to be run such as tests
 before_script:
-  - echo "no tests"
+  - echo "no test"
 
 script:
   - docker build -t reverseproxy ./udagram-reverseproxy
