@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: thangth8/udagram-frontend:v4
+          image: thangth8/udagram-frontend:v5
           imagePullPolicy: Always
           resources:
             requests:

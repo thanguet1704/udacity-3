@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend-feed
-          image: thangth8/udagram-api-feed:v4
+          image: thangth8/udagram-api-feed:v5
 
           imagePullPolicy: Always
           resources:
