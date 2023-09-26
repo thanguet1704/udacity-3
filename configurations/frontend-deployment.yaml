@@ -17,15 +17,15 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: thangth8/udagram-frontend:v3
+          image: thangth8/udagram-frontend:v4
           imagePullPolicy: Always
           resources:
             requests:
-              memory: "64Mi"
-              cpu: "75m"
+              memory: "512Mi"
+              cpu: "250m"
             limits:
-              memory: "128Mi"
-              cpu: "88m"
+              memory: "2048Mi"
+              cpu: "500m"
 
           ports:
             - containerPort: 80

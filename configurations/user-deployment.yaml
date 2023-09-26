@@ -15,16 +15,16 @@ spec:
         service: backend-user
     spec:
       containers:
-        - image: thangth8/udagram-api-user:v3
+        - image: thangth8/udagram-api-user:v4
           name: backend-user
           imagePullPolicy: Always
           resources:
             requests:
-              memory: "256Mi"
-              cpu: "75m"
-            limits:
               memory: "512Mi"
-              cpu: "100m"
+              cpu: "250m"
+            limits:
+              memory: "2048Mi"
+              cpu: "500m"
           envFrom:
             - secretRef:
                 name: env-secret
