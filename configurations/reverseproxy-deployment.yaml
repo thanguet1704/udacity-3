@@ -15,16 +15,16 @@ spec:
         service: reverseproxy
     spec:
       containers:
-        - image: thangth8/reverseproxy:v3
+        - image: thangth8/reverseproxy:v4
           name: reverseproxy
           imagePullPolicy: Always
           resources:
             requests:
-              memory: "64Mi"
-              cpu: "75m"
+              memory: "512Mi"
+              cpu: "250m"
             limits:
-              memory: "128Mi"
-              cpu: "88m"
+              memory: "2048Mi"
+              cpu: "500m"
           envFrom:
             - secretRef:
                 name: env-secret
