@@ -9,10 +9,13 @@ import { config } from "./config/config";
 import { V0_FEED_MODELS } from "./controllers/v0/model.index";
 
 (async () => {
+  console.log("start sequelize");
+  console.log(JSON.stringify(config));
   await sequelize.addModels(V0_FEED_MODELS);
 
   console.debug("Initialize database connection...");
   await sequelize.sync();
+  console.log("success sequelize");
 
   const app = express();
   const port = process.env.PORT || 8080;
